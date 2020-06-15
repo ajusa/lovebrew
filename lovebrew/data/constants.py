@@ -5,7 +5,7 @@ def set_logging(enable):
     if enable:
         logging.disable(logging.NOTSET)
     else:
-        logging.disable()
+        logging.disable(logging.NOTSET)
 
 # PATHS & STUFF #
 
