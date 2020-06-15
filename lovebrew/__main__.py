@@ -29,12 +29,6 @@ def has_help_or_version(args):
 
 
 def main(argv=None):
-    if not FIRST_RUN_PATH.exists():
-        print(FIRST_RUN_DIALOG)
-        FIRST_RUN_PATH.touch()
-
-        return
-
     if not os.getenv("DEVKITARM") or not os.getenv("DEVKITPRO"):
         print(DEVKITPRO_ERROR)
         return
